@@ -1,0 +1,78 @@
+<html>
+    <head>
+		<title>Actividad Grupal con D3.js</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="VariacionHurtos.js"></script>
+
+        <style>
+            .tooltip {
+               
+                pointer-events: none;
+                min-width:260px;
+                max-width:400px;
+                opacity: 0.5;
+                padding-left: 10px;
+                transform:translate(0, -50%); 
+                color:#ffffff;
+                background-color:#2D4B66;
+                font-weight:normal;
+                font-size:13px;
+                border-radius:4px;
+                position:absolute;
+                z-index:99999999;
+                box-sizing:border-box;
+                box-shadow:0 1px 8px rgba(0,0,0,0.5); 
+                padding-left: 20px;
+
+            }
+
+            .ejes line{
+                stroke: #063966;
+            }
+
+            .ejes path{
+                stroke: #063966;
+            }
+ 
+
+            .ejes text{
+                fill: black;
+                font-weight: bold;
+            }
+
+            .titulo{
+                width: 900;
+
+            }
+
+            
+        </style>
+
+    </head>
+    <body>
+
+        <div id="dvBody"> 
+            <div id="dvHurtos" class="titulo">
+                <center> 
+                    <h2 style="color:#03382c;">Total de hurtos en España</h2>                    
+                </center> 
+            </div>   
+        </div>  
+
+      <div id="dvBody2"> 
+            <div id="dvVariacion" class="titulo" style="opacity:0">
+                <center> 
+                    <h2 style="color:#03382c;">Variación de hurtos en España</h2>                    
+                </center> 
+            </div>   
+             <div id="dvBodyVariacion"> 
+             </div>   
+        </div>
+
+		
+	 
+    </body>
+</html>
+
